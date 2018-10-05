@@ -2,17 +2,17 @@
 
 This version of the practice website for Jekyll will focus on the following:
 
--[ ] Site Structure
+- [ ] Site Structure
 
--[ ] Using Collections
+- [ ] Using Collections
 
--[ ] Using categories and tags
+- [ ] Using categories and tags
 
--[ ] Employing HTML5 markup
+- [ ] Employing HTML5 markup
 
--[ ] Using Sass capabilities
+- [ ] Using Sass capabilities
 
--[ ] Using Flexbox for responsive layouts
+- [ ] Using Flexbox for responsive layouts
 
 ## Top Code
 
