@@ -14,7 +14,9 @@ This version of the practice website for Jekyll will focus on the following:
 
 - [ ] Using Flexbox for responsive layouts
 
-## Top Code
+---
+
+## Top Code Examples
 
 The most important code blocks are highlighted below with some context to their appearance in the project codebase and use
 
@@ -22,7 +24,9 @@ The most important code blocks are highlighted below with some context to their 
 
 ```yaml
 ---
+# index.html page front matter
 layout: default
 title: My Website Title
 ---
 ```
+
