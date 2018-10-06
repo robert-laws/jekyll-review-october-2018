@@ -2,6 +2,6 @@
 layout: post
 title: "Welcome to the Website"
 ---
-# {{post.title}}
+#### Blog post tagline content
 
 *First blog post*
