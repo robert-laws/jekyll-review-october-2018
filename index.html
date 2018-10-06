@@ -4,10 +4,12 @@ title: Home Page
 ---
 <h1>{{page.title}}</h1>
 
-<ul>
+<ul class="blog-list">
   {% for post in site.posts %}
     <li>
-      <a href="{{post.url}}">{{post.title}}</a>
+      <h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
+      <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date: "%B %-d, %Y" }}</time>
     </li>
+    {{post.excerpt}}
   {% endfor %}
 </ul>
