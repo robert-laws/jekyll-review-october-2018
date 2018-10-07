@@ -15,10 +15,16 @@ title: Home Page
   </article>
   {% endfor %}
   <div class="paginator">
-    <p class="prev-link"><a href="{{site.baseurl}}/" class="previous">Newer Posts</a></p>
-
-    <p class="prev-link"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">Newer Posts</a></p>
-
-    <p class="next-link"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">Older Entries</a></p>
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <span class="prev-link"><a href="{{site.baseurl}}/" class="previous">Newer Posts</a></span>
+      {% else %}
+        <span class="prev-link"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">Newer Posts</a></span>
+      {% endif %}
+    {% endif %}
+    &nbsp;&nbsp;&nbsp;
+    {% if paginator.next_page %}
+      <span class="next-link"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">Older Entries</a></span>
+    {% endif %}
   </div>
 </section>
