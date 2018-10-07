@@ -8,3 +8,8 @@ url: http://mywebsite.com
 # Build Settings
 markdown: kramdown
 exclude: ["README.md"]
+
+paginate: 3
+paginate_path: '/blog/page:num/'
+
+plugins: [jekyll-paginate]
