@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+header, main, footer {
+  margin: 20px;
+}
+
 .blog-list article {
   padding: 10px 0;
 }
