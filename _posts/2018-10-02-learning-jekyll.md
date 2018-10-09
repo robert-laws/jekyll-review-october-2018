@@ -4,6 +4,7 @@ title: Learning Jekyll
 date: 2018-10-02 09:37:27
 author: "Bob Cobb"
 excerpt_separator: <!-- more -->
+tags: [jekyll, web design, liquid]
 ---
 It's not too difficult to learn how to use Jekyll to make a website. Just follow the directions from the [Jekyll Website](https://jekyllrb.com/)<!-- more -->
 

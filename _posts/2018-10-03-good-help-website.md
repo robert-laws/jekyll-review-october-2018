@@ -4,6 +4,7 @@ title: Where to find help with Jekyll
 date: 2018-10-03 16:43:12
 author: "Hal Hope"
 excerpt_separator: <!-- more -->
+tags: [jekyll, blogging, liquid]
 ---
 It's difficult to find help sometimes. That's why I've writtent this post. <!-- more --> I will give details on the places to go for help with Jekyll.
 
