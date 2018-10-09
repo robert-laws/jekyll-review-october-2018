@@ -10,3 +10,11 @@ header, main, footer {
 .blog-list article {
   padding: 10px 0;
 }
+
+#archive-list ul {
+  padding: 20px 0;
+}
+
+#archive-list ul li {
+  padding: 10px 0;
+}

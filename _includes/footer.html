@@ -1,6 +1,8 @@
 <footer>
   <p>footer information</p>
-  {% for page in site.pages %}
-    <p>{{page.title}}</p>
-  {% endfor %}
+  Total Pages: {% if site.pages.size > 5 %} Large Number - {{site.pages.size}}{% else %}Small Number - {{site.pages.size}}{% endif %}
+
+  <!-- {% for page in site.pages %}
+    <p>{{page.url}}</p>
+  {% endfor %} -->
 </footer>
