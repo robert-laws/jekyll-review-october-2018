@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   margin: 20px;
 }
 
