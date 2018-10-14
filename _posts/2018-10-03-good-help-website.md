@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Where to find help with Jekyll
 date: 2018-10-03 16:43:12
 author: "Hal Hope"

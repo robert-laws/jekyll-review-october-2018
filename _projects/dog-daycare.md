@@ -1,6 +1,5 @@
 ---
 title: Dog Daycare
-layout: default
 date: 2018-08-12
 ---
 

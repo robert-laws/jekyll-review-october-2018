@@ -1,6 +1,8 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}} | {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+  {% feed_meta %}
+  {% seo %}
   <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
   <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">

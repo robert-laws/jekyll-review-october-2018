@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to add Pages with Jekyll"
 author: Bob Cobb
 date: 2018-10-05 04:53:26

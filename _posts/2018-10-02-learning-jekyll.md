@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Learning Jekyll
 date: 2018-10-02 09:37:27
 author: "Bob Cobb"
