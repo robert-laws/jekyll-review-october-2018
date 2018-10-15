@@ -15,6 +15,6 @@ This website is meant for dog owners who want to give their dogs something fun t
 
 ### {{process.title}}
 
-{{process.content}}
+{{process.content | markdownify}}
 
 {% endfor %}

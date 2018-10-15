@@ -31,3 +31,7 @@ title: Home Page
     {% endif %}
   </div>
 </section>
+
+{% for file in site.static_files %}
+  {{file.name}}<br>
+{% endfor %}
