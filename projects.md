@@ -6,8 +6,9 @@ title: Projects Page
 
 {% for project in site.projects %}
 
-{{ project.content | markdownify }}
+<!-- {{ project.content | markdownify }} -->
 
-[{{project.title}}]({{site.baserul}}{{project.url}})
+{:.project-list}
+* [{{project.title}}]({{site.baserul}}{{project.url}})
 
 {% endfor %}

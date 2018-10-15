@@ -34,8 +34,13 @@ permalink: /blog/:title
 
 plugins: [jekyll-paginate]
 
+# Collections
+collections_dir: my_collections
+
 collections:
   projects:
+    output: true
+  dog_daycare:
     output: true
 
 # Front Matter Defaults
