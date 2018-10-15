@@ -17,6 +17,11 @@ kramdown:
     block:
       line_numbers: false
 
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Files to Exclude from Build
 exclude:
   - Gemfile
@@ -36,7 +41,6 @@ plugins: [jekyll-paginate]
 
 # Collections
 collections_dir: my_collections
-
 collections:
   projects:
     output: true
