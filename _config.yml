@@ -4,10 +4,20 @@ description: "This website is created to showcase my work as a web developer and
 tagline: "Every developer needs a website"
 baseurl: ""
 url: http://mywebsite.com
+excerpt_separator: <!-- more -->
+
+timezone: 'Asia/Riyadh'
 
 # Build Settings
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Files to Exclude from Build
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -28,14 +38,24 @@ collections:
   projects:
     output: true
 
+# Front Matter Defaults
 defaults:
-  - scope:
+  - 
+    scope:
       path: ""
       type: "projects"
     values:
       layout: "project"
-  - scope:
+  - 
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      author: "Bob Cobb"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
