@@ -2,7 +2,7 @@
 title: Web Developer Website
 description: "This website is created to showcase my work as a web developer and as a blog platform"
 tagline: "Every developer needs a website"
-baseurl: "https://robert-laws.com/jekyll-review-october-2018"
+baseurl: "/jekyll-review-october-2018"
 url: http://mywebsite.com
 excerpt_separator: <!-- more -->
 
