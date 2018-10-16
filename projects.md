@@ -9,7 +9,7 @@ title: Projects Page
 <!-- {{ project.content | markdownify }} -->
 
 {:.project-list}
-* [{{project.title}}]({{site.baseurl}}{{project.url}})
+* [{{project.title}}]({{site.baseurl}}/project/{{project.title | slugify}})
 {% endfor %}
 
 ---

@@ -18,4 +18,4 @@ Get in touch.
 
 Read more: [Learning Jekyll]({{site.baseurl}}{% post_url 2018-10-02-learning-jekyll %})
 
-![Coffee Cup](/assets/img/photo78.jpg){:title="an interesting coffee cup"}{:.medium-image}
+![Coffee Cup]({{site.baseurl}}/assets/img/photo78.jpg){:title="an interesting coffee cup"}{:.medium-image}

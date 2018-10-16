@@ -8,6 +8,8 @@ Some content goes here.
 
 {% include image.html url="http://www.google.com" max-width="230px" file="/assets/img/photo78.jpg" caption="coffee mug" %}
 
+**{{site.title}}**
+
 {{site.time}}
 
 ---
