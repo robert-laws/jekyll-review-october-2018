@@ -37,7 +37,11 @@ paginate: 2
 paginate_path: '/blog/page:num/'
 permalink: /blog/:title
 
-plugins: [jekyll-paginate]
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Collections
 collections_dir: my_collections

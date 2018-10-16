@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: site_page
 author: Hal Hope
 title: Contact Information
 ---
