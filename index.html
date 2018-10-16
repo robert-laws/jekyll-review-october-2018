@@ -4,6 +4,8 @@ title: Home Page
 ---
 <h1>{{page.title}}</h1>
 
+<h2>I give this plugin two :smile: :+1:!</h2>
+
 <section class="blog-list">
   {% for post in paginator.posts %}
   <article>
@@ -25,7 +27,7 @@ title: Home Page
         <span class="prev-link"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">Newer Posts</a></span>
       {% endif %}
     {% endif %}
-    &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp; - page {{paginator.page}} of {{paginator.total_pages}} total pages - &nbsp;&nbsp;&nbsp;
     {% if paginator.next_page %}
       <span class="next-link"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">Older Entries</a></span>
     {% endif %}
