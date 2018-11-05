@@ -7,10 +7,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 # Added at 2018-10-14 16:06:01 +0300 by guq\rdl27:
-gem "jekyll", "~> 3.8"
+gem "jekyll", "3.7.4"
 
 group :jekyll_plugins do
-  gem 'github-pages'
+  gem 'github-pages', '>=192'
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
