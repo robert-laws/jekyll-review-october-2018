@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+
+  &__sideline {
+    flex: 1;
+
+    @include xl {
+      flex: 0;
+    }
+  }
+
+  &__welcome {
+    flex: 2;
+    align-self: flex-start;
+    padding-left: 0;
+
+    @include xl {
+      padding-left: 2rem;
+    }
+
+    h1 {
+      color: $color-wet-asphalt;
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    button {
+      padding: 1.4rem 2.4rem;
+      margin: 1.5rem 0.5rem;
+      font-size: 1.6rem;
+      background-color: darken($color-primary, 25%);
+      font-weight: 500;
+      color: #FFF;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s linear;
+
+      &:hover {
+        box-shadow: 0 0.5rem 1.5rem rgba($color-black, 0.1);
+        transform: translateY(-0.2rem);
+      }
+
+      &:active {
+        box-shadow: 0 0.3rem 1.1rem rgba($color-black, 0.1);
+        transform: translateY(-0.1rem);
+      }
+    }
+  }
+
+  &__callout {
+    display: flex;
+  }
+
+  &__button {
+    flex: 1;
+  }
+
+  &__portrait {
+    img {
+      margin: 2rem;
+      width: 67%;
+      border-radius: 4px;
+      box-shadow:
+        0 15px 30px 0 rgba(0,0,0,0.11),
+        0 5px 15px 0 rgba(0,0,0,0.08);
+    }
+  }
+
+  &__image {
+    flex: 4;
+    align-self: center;
+    position: relative;
+    height: 42rem;
+
+    background-image: 
+      radial-gradient(circle at center right, rgba(#FFF, 0.025), #FFF),
+      url('../img/hero-2.jpg');
+
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
