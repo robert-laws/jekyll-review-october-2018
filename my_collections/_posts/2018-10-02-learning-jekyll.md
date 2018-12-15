@@ -3,6 +3,7 @@ title: Learning Jekyll
 date: 2018-10-02 09:37:27
 categories: [jekyll]
 tags: [jekyll, web design, liquid]
+featured-image: stock-4.jpg
 ---
 It's not too difficult to learn how to use Jekyll to make a website. Just follow the directions from the [Jekyll Website](https://jekyllrb.com/)<!-- more -->
 

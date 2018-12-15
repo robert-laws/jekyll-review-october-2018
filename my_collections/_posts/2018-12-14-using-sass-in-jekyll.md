@@ -5,7 +5,7 @@ date: 2018-12-10 14:41:23
 date_updated: 2018-12-14 14:41:23
 categories: [jekyll]
 tags: [jekyll, sass, javascript]
-post-image: stock-2.jpg
+featured-image: stock-2.jpg
 ---
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium libero quia repellat officiis amet natus facere, quam quo, iusto voluptatibus soluta quasi laborum tempore ratione consequuntur? <!-- more -->Alias, harum minima mollitia quae molestias cumque omnis corrupti quis voluptatibus numquam nisi.
 
@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas aperiam
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facilis veritatis labore itaque, nam illum perferendis reprehenderit commodi amet a deleniti aspernatur quia provident iste modi. At, consectetur. Pariatur dicta nam ut incidunt rem provident explicabo quos debitis a doloremque error corporis hic corrupti ipsa in voluptatem soluta perferendis, fuga odio voluptates illum eveniet eum unde? Tempore sapiente dolorum repellendus odit rem. Quod, sed expedita.
 
-{% capture post_image %}/assets/img/{{page.post-image}}{% endcapture %}
+{% capture post_image %}/assets/img/{{page.featured-image}}{% endcapture %}
 {% include post-image.html file=post_image caption="Web Developer in Action" %}
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, corporis facere dolorem beatae repellendus unde ipsam quae eaque nihil quam illo magni sunt eveniet iusto vel odit dolor necessitatibus hic laudantium cupiditate ratione iure dolore facilis. Laudantium quidem omnis quisquam quod sed esse sint voluptate!

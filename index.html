@@ -18,8 +18,9 @@ title: Home Page
       {% capture post_author %}{{post.author}}{% endcapture %}
       {% capture post_excerpt %}{{post.excerpt}}{% endcapture %}
       {% assign post_tags = post.tags %}
+      {% capture featured_image %}{{post.featured-image}}{% endcapture %}
 
-      {% include post.html url=post_url title=post_title date=post_date author=post_author excerpt=post_excerpt tags=post_tags %}
+      {% include post.html url=post_url title=post_title date=post_date author=post_author excerpt=post_excerpt tags=post_tags image=featured_image %}
     {% endfor %}
   </section>
 </section>
