@@ -13,7 +13,11 @@
     <section class="blog-entry__summary">
         {{include.excerpt}}
     </section>
-    <section class="blog-entry__categories--links"><a href="#">Javascript</a><a href="#">HTML</a><a href="#">CSS</a><a href="#">Sass</a></section>
+    <section class="blog-entry__categories--links">
+      {% for tag in include.tags %}
+        <a href="{{site.baseurl}}/tags/{{tag}}">{{tag}}</a> 
+      {% endfor %}    
+    </section>
   </div>
   <div class="blog-entry__visual"><img src="{{site.baseurl}}/assets/img/stock-2.jpg"></div>
   <div class="blog-entry__sideline--right"></div>
