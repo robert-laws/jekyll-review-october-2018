@@ -23,11 +23,15 @@ layout: default
       <footer class="blog-post__tags">
         <p>tags:</p>
         <ul>
-          <li><a href="#">jekyll / </a></li>
-          <li><a href="#">html / </a></li>
-          <li><a href="#">css / </a></li>
-          <li><a href="#">sass / </a></li>
-          <li><a href="#">pug</a></li>
+        {% for tag in page.tags %}
+          <li>
+            {% if forloop.last == true %}
+              <a href="{{site.baseurl}}/tags/{{tag}}/">{{tag}}</a>
+            {% else %}
+              <a href="{{site.baseurl}}/tags/{{tag}}/">{{tag}}</a> / 
+            {% endif %}            
+          </li>
+        {% endfor %}
         </ul>
       </footer>
     </div>
