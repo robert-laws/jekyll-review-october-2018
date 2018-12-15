@@ -12,7 +12,7 @@ layout: default
           {% endfor %}
         </div>
         <div class="blog-post__title">{{page.title}}</div>
-        <div class="blog-post__author">by<span> <a href="#">{{page.author}}</a></span></div>
+        <div class="blog-post__author">by<span> <a href="{{site.baseurl}}/authors/{{page.author | slugify}}">{{page.author}}</a></span></div>
         <div class="blog-post__meta">
           <p class="publish">Published - <time itemprop="dateCreated" datetime="{{page.date}}">{{page.date | date: "%B %-d, %Y" }}</time></p>
           {% if page.date_updated %}

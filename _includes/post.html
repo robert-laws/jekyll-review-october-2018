@@ -8,7 +8,7 @@
       <div class="date">
         <time itemprop="dateCreated" datetime="{{include.date}}">{{include.date | date: "%B %-d, %Y" }}</time>
       </div>
-      <div class="author"><span>by <a href="#">{{include.author}}</a></span></div>
+      <div class="author"><span>by <a href="{{site.baseurl}}/authors/{{include.author | slugify}}">{{include.author}}</a></span></div>
     </header>
     <section class="blog-entry__summary">
         {{include.excerpt}}

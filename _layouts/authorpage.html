@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<!-- We're going to give each page a tag when we create it.
+This will be the title -->
+<h1>{{ page.author }}</h1>
+{% assign the_author = page.author %}
+
+<h3>Posts</h3>
+<ul>
+{% for post in site.posts %}
+  {% for author in post.author %}
+    {% if author == the_author %}
+    <li>
+      <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</ul>
