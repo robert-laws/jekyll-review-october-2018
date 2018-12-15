@@ -1,13 +1,9 @@
-<header>
-  <div id="logo-image">
-    <a href="{{site.baseurl}}/">Logo Image</a>
-  </div>
-  <nav>
-    <a href="{{site.baseurl}}/projects" {% if page.url=="/projects" %}class='active' {% endif %}>Projects</a>
-    <a href="{{site.baseurl}}/blog" {% if page.url=="/blog" %}class='active' {% endif %}>Blog</a>
-    <a href="{{site.baseurl}}/about" {% if page.url=="/about" %}class='active' {% endif %}>About Me</a>
-    <a href="{{site.baseurl}}/contact" {% if page.url=="/contact" %}class='active' {% endif %}>Contact</a>
-    <a href="{{site.baseurl}}/tags" {% if page.url=="/tags" %}class='active' {% endif %}>Archives</a>
-    <a href="{{site.baseurl}}/info" {% if page.url=="/info" %}class='active' {% endif %}>Site Information</a>
+<header class="website-header"><span id="navbar-toggle"><i class="fas fa-bars"></i></span>
+  <div class="website-header__logo"><a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/logo-text.png"></a></div>
+  <nav class="website-header__navigation" id="main-nav">
+    <a class="true-link" href="{{site.baseurl}}/projects">Projects</a>
+    <a class="true-link" href="{{site.baseurl}}/blog">Blog</a>
+    <a class="true-link" href="{{site.baseurl}}/about">About Me</a>
+    <a class="true-link" href="{{site.baseurl}}/contact">Contact</a>
   </nav>
 </header>
