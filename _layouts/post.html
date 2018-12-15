@@ -2,8 +2,34 @@
 layout: default
 ---
 
-<main>
-  <h1>Blog Post - {{ page.title }}</h1>
-  {{page.date | date: "%B %-d, %Y"}}
-  {{ content }}
-</main>
+<article class="blog-post">
+    <div class="blog-post__sideline"></div>
+    <div class="blog-post__content">
+      <header class="blog-post__header">
+        <div class="blog-post__category"> <a href="#">jekyll</a></div>
+        <div class="blog-post__title">{{page.title}}</div>
+        <div class="blog-post__author">by<span> <a href="#">{{page.author}}</a></span></div>
+        <div class="blog-post__meta">
+          <p class="publish">Published - <time itemprop="dateCreated" datetime="{{page.date}}">{{page.date | date: "%B %-d, %Y" }}</time></p>
+          {% if page.date_updated %}
+            <p class="divider">|</p>
+            <p class="update">Updated - <time itemprop="dateUpdated" datetime="{{page.date_updated}}">{{page.date_updated | date: "%B %-d, %Y" }}</time</p>
+          {% endif %}
+        </div>
+      </header>
+      <section class="blog-post__text">
+        {{page.content}}
+      </section>
+      <footer class="blog-post__tags">
+        <p>tags:</p>
+        <ul>
+          <li><a href="#">jekyll / </a></li>
+          <li><a href="#">html / </a></li>
+          <li><a href="#">css / </a></li>
+          <li><a href="#">sass / </a></li>
+          <li><a href="#">pug</a></li>
+        </ul>
+      </footer>
+    </div>
+    <div class="blog-post__sideline"></div>
+  </article>
