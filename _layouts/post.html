@@ -6,7 +6,11 @@ layout: default
     <div class="blog-post__sideline"></div>
     <div class="blog-post__content">
       <header class="blog-post__header">
-        <div class="blog-post__category"> <a href="#">jekyll</a></div>
+        <div class="blog-post__category">
+          {% for category in page.categories limit:1 %}
+            <a href="{{site.baseurl}}/categories/{{category}}">{{category}}</a>
+          {% endfor %}
+        </div>
         <div class="blog-post__title">{{page.title}}</div>
         <div class="blog-post__author">by<span> <a href="#">{{page.author}}</a></span></div>
         <div class="blog-post__meta">
