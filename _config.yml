@@ -37,6 +37,10 @@ paginate: 2
 paginate_path: '/blog/page:num/'
 permalink: /blog/:title
 
+autoprefixer:
+  browsers:
+  - last 2 versions
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -44,6 +48,7 @@ plugins:
   - jekyll-seo-tag
   - jemoji
   - jekyll-avatar
+  - jekyll-autoprefixer
 
 # Collections
 collections_dir: my_collections

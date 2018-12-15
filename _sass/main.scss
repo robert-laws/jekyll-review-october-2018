@@ -11,7 +11,12 @@
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/pages/index";
+@import "layouts/pages/blog";
+@import "layouts/pages/about";
+@import "layouts/pages/resume";
+@import "layouts/pages/contact";
 
 
 // COMPONENTS
 @import "components/hero";
+@import "components/post";
