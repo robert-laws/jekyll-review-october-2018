@@ -8,10 +8,24 @@ title: Home Page
   {% include hero.html %}
 
   <!-- most recent project -->
+  <section class="project-list"></section>
+    {% assign projects = site.projects | sort: 'date' | reverse %}
+    {% for project in projects limit:1 %}
+      {% capture project_url %}/project/{{project.title | slugify}}{% endcapture %}
+      {% capture project_title %}{{project.title}}{% endcapture %}
+      {% capture project_date %}{{project.date}}{% endcapture %}
+      {% capture project_description %}{{project.description}}{% endcapture %}
+      {% assign project_features = project.features %}
+      {% assign project_tech_stack = project.tech_stack %}
+
+      {% include project.html url=project_url title=project_title date=project_date description=project_description features=project_features tech_stack=project_tech_stack %}
+    {% endfor %}
+  </section>
 
   <!-- most recnet post -->
   <section class="blog-list">
-    {% for post in site.posts limit:1 %}
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts limit:1 %}
       {% capture post_url %}{{post.url}}{% endcapture %}
       {% capture post_title %}{{post.title}}{% endcapture %}
       {% capture post_date %}{{post.date}}{% endcapture %}

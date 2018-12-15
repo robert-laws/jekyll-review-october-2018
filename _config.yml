@@ -58,6 +58,9 @@ collections:
   dog_daycare:
     output: true
     permalink: /project/dog-daycare/:name
+  developer_portfolio:
+    output: true
+    permalink: /project/developer-portfolio/:name
 
 # Front Matter Defaults
 defaults:

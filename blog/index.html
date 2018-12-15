@@ -4,6 +4,11 @@ title: Blog Posts
 ---
 
 <section class="blog-list">
+  <div class="blog-list__header">
+    <div class="blog-list__header--sideline"></div>
+    <h1>All Blog Posts</h1>
+    <div class="blog-list__header--sideline"></div>
+  </div>
   {% for post in paginator.posts %}
     {% capture post_url %}{{post.url}}{% endcapture %}
     {% capture post_title %}{{post.title}}{% endcapture %}
