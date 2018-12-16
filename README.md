@@ -8,9 +8,9 @@ Project - to do list:
 
 - [ ] add functional contact form
 
-- [ ] clean up footer formatting and add social media addresses
+- [x] clean up footer formatting and add social media addresses
 
-- [ ] refactor CTA button on hero section
+- [x] refactor CTA button on hero section
 
 - [x] blog - style pagination
 
