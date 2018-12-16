@@ -84,7 +84,7 @@
             }
 
             &:focus:invalid {
-              // border-bottom: 3px solid #F00;
+              border-bottom: 3px solid #F00;
             }
           }
 
@@ -100,6 +100,10 @@
               outline: none;
               border-bottom: 3px solid $color-primary-light;
             }
+
+            &:focus:invalid {
+              border-bottom: 3px solid #F00;
+            }
           }
         }
 
@@ -108,7 +112,7 @@
           flex-wrap: wrap;
           padding-top: 1rem;
 
-          button {
+          input[type=submit] {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -132,7 +136,7 @@
 
             &:active,
             &:hover {
-              background-color: darken($color-primary, 20%);
+              background-color: darken($color-primary, 30%);
             }
           }
         }

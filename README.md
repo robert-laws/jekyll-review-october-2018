@@ -6,7 +6,7 @@ Project - to do list:
 
 - [ ] improve hero section on home page
 
-- [ ] add functional contact form
+- [x] add functional contact form
 
 - [x] clean up footer formatting and add social media addresses
 
