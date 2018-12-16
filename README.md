@@ -12,7 +12,7 @@ Project - to do list:
 
 - [ ] refactor CTA button on hero section
 
-- [ ] blog - style pagination
+- [x] blog - style pagination
 
 - [ ] responsive - all pages
 
