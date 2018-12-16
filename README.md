@@ -14,7 +14,7 @@ Project - to do list:
 
 - [x] blog - style pagination
 
-- [ ] responsive - all pages
+- [x] responsive - all pages
 
 - [ ] content development
 

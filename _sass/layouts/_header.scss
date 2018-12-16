@@ -38,6 +38,10 @@
       height: 9rem;
       transition: all 0.2s ease-in 0.1s;
 
+      @include md {
+        height: 6.5rem;
+      }
+
       @include sm {
         height: 7.5rem;
       }
@@ -67,8 +71,13 @@
       }
     }
 
+    @include md {
+      font-size: 1.65rem;
+    }
+
     @include sm {
       width: 100%;
+      font-size: 1.8rem;
       flex-direction: column;
       align-items: center;
       margin-right: 0px;

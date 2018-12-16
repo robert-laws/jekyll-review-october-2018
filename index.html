@@ -8,7 +8,7 @@ title: Home Page
   {% include hero.html %}
 
   <!-- most recent project -->
-  <section class="project-list"></section>
+  <section class="project-list">
     {% assign projects = site.projects | sort: 'date' | reverse %}
     {% for project in projects limit:1 %}
       {% capture project_url %}/project/{{project.title | slugify}}{% endcapture %}
@@ -38,7 +38,3 @@ title: Home Page
     {% endfor %}
   </section>
 </section>
-
-
-
-<!-- {% include image.html url="http://www.google.com" max-width="230px" file="/assets/img/photo78.jpg" caption="info" %} -->

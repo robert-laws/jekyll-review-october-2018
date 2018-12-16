@@ -2,12 +2,26 @@
   $self: &;
   display: flex;
 
+  @include sm {
+    flex-direction: column;
+  }
+
   &:nth-child(even) {
     @include splash-blog-dark;
     @include sideline-right-wide($self);
 
+    @include sm {
+      @include splash-blog-dark--mobile;
+      margin-top: 4rem;
+    }
+
     #{$self}__visual {
       order: 0;
+
+      @include sm {
+        order: -5;
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -15,8 +29,18 @@
     @include splash-blog-light;
     @include sideline-left-wide($self);
 
+    @include sm {
+      @include splash-blog-light--mobile;
+      margin-top: 4rem;
+    }
+
     #{$self}__visual {
       order: -1;
+
+      @include sm {
+        order: -5;
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -37,6 +61,10 @@
       flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 1.2rem;
+
+      @include sm {
+        flex-direction: column;
+      }
 
       .title {
         flex: 1;
@@ -64,6 +92,11 @@
         flex: 0 0 15rem;
         align-self: center;
         text-align: right;
+
+        @include sm {
+          flex: 1;
+          align-self: flex-start;
+        }
 
         time {
           font-size: 1.7rem;

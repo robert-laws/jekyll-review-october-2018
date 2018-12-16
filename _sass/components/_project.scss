@@ -1,6 +1,7 @@
 .project-detail {
   padding: 7rem 0;
   background-color: lighten($color-primary-dark, 79%);
+  -webkit-clip-path: polygon(0% 0%, 100% 3%, 100% 97%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 3%, 100% 97%, 0% 100%);
 
   position: relative;

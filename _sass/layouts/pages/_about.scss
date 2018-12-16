@@ -34,6 +34,10 @@
         color: $color-wet-asphalt;
         font-size: 3rem;
         margin-bottom: 1rem;
+
+        @include sm {
+          text-align: center;
+        }
       }
     }
 
