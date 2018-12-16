@@ -1,6 +1,7 @@
 ---
 title: "Welcome to the Website"
 date: 2018-10-01 11:23:32
+author: Kal Kool
 tags: [jekyll, web design, blogging, yaml, liquid]
 featured-image: stock-3.jpg
 ---

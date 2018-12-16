@@ -1,6 +1,7 @@
 ---
 title: "How to add Pages with Jekyll"
 date: 2018-10-05 04:53:26
+author: Bob Cobb
 tags: [jekyll, web design]
 featured-image: stock-4.jpg
 ---

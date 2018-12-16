@@ -8,5 +8,6 @@ features:
 tech_stack:
   - Jekyll
   - Sass
+  - SQL
   - HTML5
 ---

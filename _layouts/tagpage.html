@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-<!-- We're going to give each page a tag when we create it.
-This will be the title -->
-<h1>{{ page.tag | capitalize }}</h1>
-
-<ul>
-    {% for post in site.tags[page.tag] %}
-    <li>
-        {{ post.date | date: "%B %d, %Y" }}: <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<section class="linked">
+  <div class="linked__sideline"></div>
+  <div class="linked__content">
+    <div class="linked__header">
+      <h1>{{ page.tag | capitalize }}</h1>
+    </div>
+    <div class="linked__text">
+      <h3>Posts</h3>
+      <ul>
+        {% for post in site.tags[page.tag] %}
+        <li class="sub-list">
+          <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="linked__sideline"></div>
+</section>

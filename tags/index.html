@@ -1,32 +1,38 @@
 ---
 layout: default
-title: Post Archives
+title: Blog Tags
 ---
 
-<section id="archive-list">
-  <article>
-    <header>
-      <h2>{{page.title}}</h2>
+<section class="linked">
+  <div class="linked__sideline"></div>
+  <div class="linked__content">
+    <div class="linked__header">
+      <h1>Posts by {{page.title}}</h1>
+    </div>
+    <div class="linked__text">
+      {% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+      {% assign sorted_tags = site_tags | split:',' | sort %}
       <ul>
-        {% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-        {% assign sorted_tags = site_tags | split:',' | sort %}
-
         {% for tag in sorted_tags %}
-          <li><a href="#{{tag | cgi_escape}}">{{tag}} ({{site.tags[tag].size}})</a></li>
+        <li>
+          <a href="#{{tag | cgi_escape}}">{{tag}} ({{site.tags[tag].size}})</a>
+        </li>
         {% endfor %}
       </ul>
-    </header>
-
-    {% for tag in sorted_tags %}
-      <h3 id="{{tag | cgi_escape}}">{{tag}}</h3>
+      <hr>
+      {% for tag in sorted_tags %}
+      <h3 id="{{tag | cgi_escape}}">
+        <a href="{{site.baseurl}}/tags/{{tag | slugify}}">{{tag | capitalize}}</a>
+      </h3>
       <ul>
         {% for post in site.tags[tag] %}
-          <li>
-            <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date: "%b %d, %Y"}}</time> | 
-            <a href="{{site.baseurl}}{{post.url}}">{{site.baseurl}}{{post.title}}</a>
+          <li class="sub-list">
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
           </li>
         {% endfor %}
       </ul>
-    {% endfor %}
-  </article>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="linked__sideline"></div>
 </section>

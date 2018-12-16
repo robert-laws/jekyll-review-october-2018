@@ -28,9 +28,9 @@ layout: default
                 {% for tag in page.tags %}
                 <li>
                   {% if forloop.last == true %}
-                  <a href="{{site.baseurl}}/tags/{{tag}}">{{tag}}</a>
+                  <a href="{{site.baseurl}}/tags/{{tag | slugify}}">{{tag}}</a>
                   {% else %}
-                  <a href="{{site.baseurl}}/tags/{{tag}}">{{tag}}</a> /
+                  <a href="{{site.baseurl}}/tags/{{tag | slugify}}">{{tag}}</a> /
                   {% endif %}
                 </li>
                 {% endfor %}

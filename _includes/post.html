@@ -15,7 +15,7 @@
     </section>
     <section class="blog-entry__categories--links">
       {% for tag in include.tags %}
-        <a href="{{site.baseurl}}/tags/{{tag}}">{{tag}}</a> 
+        <a href="{{site.baseurl}}/tags/{{tag | slugify}}">{{tag}}</a> 
       {% endfor %}    
     </section>
   </div>

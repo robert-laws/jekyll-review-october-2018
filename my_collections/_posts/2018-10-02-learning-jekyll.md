@@ -1,6 +1,7 @@
 ---
 title: Learning Jekyll
 date: 2018-10-02 09:37:27
+author: Bob Cobb
 categories: [jekyll]
 tags: [jekyll, web design, liquid]
 featured-image: stock-4.jpg

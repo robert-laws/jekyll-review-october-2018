@@ -2,7 +2,7 @@
 
 Project - to do list:
 
-- [ ] format pages - tags, categories, authors, tech-stack
+- [x] format pages - tags, categories, authors, tech-stack
 
 - [ ] improve hero section on home page
 

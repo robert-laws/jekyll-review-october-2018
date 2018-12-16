@@ -39,6 +39,20 @@
       margin: 0 1rem;
     }
 
+    a {
+      text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+      color: darken($color-primary-light, 10%);
+    }
+
+    a:hover,
+    a:active {
+      color: $color-wet-asphalt;
+    }
+
     #{$self}__header {
       flex: 1;
       display: flex;

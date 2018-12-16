@@ -146,6 +146,20 @@
         margin: 1.2rem 0;
       }
 
+      a {
+        text-decoration: none;
+      }
+
+      a:link,
+      a:visited {
+        color: darken($color-primary-light, 10%);
+      }
+
+      a:hover,
+      a:active {
+        color: $color-wet-asphalt;
+      }
+
       figure {
         display: flex;
         flex-direction: column;

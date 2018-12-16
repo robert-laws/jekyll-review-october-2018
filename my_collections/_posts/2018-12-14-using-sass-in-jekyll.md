@@ -1,13 +1,13 @@
 ---
 title: Using Sass in Jekyll
-author: Bob Cobb
 date: 2018-12-10 14:41:23
 date_updated: 2018-12-14 14:41:23
+author: Bob Cobb
 categories: [jekyll]
 tags: [jekyll, sass, javascript]
 featured-image: stock-2.jpg
 ---
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium libero quia repellat officiis amet natus facere, quam quo, iusto voluptatibus soluta quasi laborum tempore ratione consequuntur? <!-- more -->Alias, harum minima mollitia quae molestias cumque omnis corrupti quis voluptatibus numquam nisi.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium libero quia repellat officiis amet natus facere, quam quo, iusto voluptatibus soluta quasi laborum tempore ratione consequuntur? <!-- more -->Alias, harum minima mollitia quae molestias cumque omnis corrupti quis voluptatibus numquam nisi. [Code with Github](https://www.github.com).
 
 ```sass
 @include "base/base";
