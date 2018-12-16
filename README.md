@@ -4,7 +4,7 @@ Project - to do list:
 
 - [x] format pages - tags, categories, authors, tech-stack
 
-- [ ] improve hero section on home page
+- [ ] * future * - improve hero section on home page
 
 - [x] add functional contact form
 
