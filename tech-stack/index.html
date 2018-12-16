@@ -1,0 +1,15 @@
+---
+layout: default
+title: Tech Stacks
+---
+<h1>{{page.title}}</h1>
+
+{% assign techs = site.projects | map: 'tech_stack' | uniq %}
+
+  <ul>
+  {% for tech in techs %}
+
+    <li><a href="{{site.baseurl}}/tech-stack/{{tech | slugify}}">{{tech}}</a></li>
+
+  {% endfor %}
+  </ul>

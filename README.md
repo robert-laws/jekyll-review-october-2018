@@ -1,18 +1,24 @@
 # Jekyll Review - October 2018
 
-This version of the practice website for Jekyll will focus on the following:
+Project - to do list:
 
-- [ ] Site Structure
+- [ ] format pages - tags, categories, authors, tech-stack
 
-- [ ] Using Collections
+- [ ] improve hero section on home page
 
-- [ ] Using categories and tags
+- [ ] add functional contact form
 
-- [ ] Employing HTML5 markup
+- [ ] clean up footer formatting and add social media addresses
 
-- [ ] Using Sass capabilities
+- [ ] refactor CTA button on hero section
 
-- [ ] Using Flexbox for responsive layouts
+- [ ] blog - style pagination
+
+- [ ] responsive - all pages
+
+- [ ] content development
+
+- [ ] * future * - combine tech-stack and tags/categories results
 
 ---
 

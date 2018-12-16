@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<!-- We're going to give each page a tag when we create it.
+This will be the title -->
+<h1>{{ page.tech }}</h1>
+{% assign the_tech = page.tech %}
+
+<h3>Projects</h3>
+<ul>
+{% for project in site.projects %}
+  {% for tech in project.tech_stack %}
+    {% if tech == the_tech %}
+    <li>
+      <a href="{{site.baseurl}}/project/{{project.title | slugify}}">{{project.title}}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</ul>

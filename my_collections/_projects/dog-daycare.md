@@ -9,4 +9,5 @@ tech_stack:
   - Ruby on Rails
   - Materialize CSS
   - SQL
+  - HTML5
 ---
