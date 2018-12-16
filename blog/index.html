@@ -21,16 +21,38 @@ title: Blog Posts
     {% include post.html url=post_url title=post_title date=post_date author=post_author excerpt=post_excerpt tags=post_tags image=featured_image %}
   {% endfor %}
   <div class="paginator">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <span class="prev-link"><a href="{{site.baseurl}}/blog" class="previous">Newer Posts</a></span>
+    <div class="paginator__previous">
+      {% if paginator.previous_page %}      
+        {% if paginator.previous_page == 1 %}
+          <a href="{{site.baseurl}}/blog" class="previous">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        {% else %}
+          <a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        {% endif %}
       {% else %}
-        <span class="prev-link"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">Newer Posts</a></span>
+        <span class="prev-link prev-link--dash">
+          &dash;
+        </span>
       {% endif %}
-    {% endif %}
-    &nbsp;&nbsp;&nbsp; - page {{paginator.page}} of {{paginator.total_pages}} total pages - &nbsp;&nbsp;&nbsp;
-    {% if paginator.next_page %}
-      <span class="next-link"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">Older Entries</a></span>
-    {% endif %}
+    </div>
+    <div class="paginator__information">
+      <span class="page-information">
+        page {{paginator.page}} of {{paginator.total_pages}}
+      </span>
+    </div>
+    <div class="paginator__next">
+      {% if paginator.next_page %}
+        <a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      {% else %}
+        <span class="next-link next-link--dash">
+          &dash;
+        </span>
+      {% endif %}
+    </div>
   </div>
 </section>
